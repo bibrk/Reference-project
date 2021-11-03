@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <head>
+
+        <title>Registration</title>
+
+        <link rel="stylesheet" href="resources/css/formstyles-css/bootstrap-formstyle.css">
+        <link rel="stylesheet" href="resources/css/formstyles-css/formstyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="src/formstylesJs/jqueryFormstyle.js"></script>
+        <script src="src/bootstrap.js"></script>
+
+    </head>
+
+    <body> 
+
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <form style="margin-top: 20px;" onSubmit="return checkPassword(this)">
+                    <input type ="text" class="fadeIn second login" placeholder="First Name" name ="login" required>
+                    <input type ="text" class="fadeIn third login" placeholder="Last Name" name ="login" required>
+                    <input type="email" class="fadeIn fourth login" placeholder="Email" name="login" required>
+                    <input title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" class="fadeIn fifth login" name="password1" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" onchange="
+                    this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
+                    if(this.checkValidity()) form.pwd2.pattern = RegExp.escape(this.value);" required >
+                    <input title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" class="fadeIn sixth login" name="password2" placeholder="Repeat Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" onchange="
+                    this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
+                    if(this.checkValidity()) form.pwd2.pattern = RegExp.escape(this.value);" required >
+                    <input type="submit" class="fadeIn seventh" value="Create an account">
+                </form>
+
+            </div>
+        </div>
+
+
+        <script src="src/formstylesJs/emailValidation.js"></script> 
+        <script src="src/formstylesJs/matchingPasswords.js"></script> 
+
+    </body>
+
+</html>

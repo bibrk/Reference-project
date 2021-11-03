@@ -1,0 +1,41 @@
+.capselector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+
+.coatselector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+
+.pantselector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+
+.capselector > div {
+    display: none;
+}
+
+.coatselector > div {
+    display: none;
+}
+
+.pantselector > div {
+    display: none;
+}
+
+.custom {
+    display: block !important;
+
+}
+

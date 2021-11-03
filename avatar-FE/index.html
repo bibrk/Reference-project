@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+
+
+<head>
+  
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="resources/css/index.css"> <!-- kivágott képek  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+  crossorigin="anonymous"> <!-- ikonok a navbarban -->
+  <link rel="stylesheet" href="resources/css/navbar.css"> <!-- navbar menü -->
+  <link rel="stylesheet" href="resources/css/images.css"> <!-- előugró képek a navbarból -->
+  <link rel="stylesheet" href="resources/css/usermenu.css">
+  <link rel="stylesheet" href="resources/css/formstyles-css/bootstrap-formstyle.css">
+  <script src="src/clickevent.js"> </script> <!-- click event a navbaron -->
+  <script src="src/removeevent.js" > </script>
+
+</head>
+
+<body>
+
+  <button id="nav-icon4" aria-label="usermenu">
+    <span></span>
+    <span></span>
+    <span></span>
+   </button>
+
+  <div class="usermenu">
+    <ul> 
+      <li>
+          <a href="#">
+              <span class="item">Create</span>
+          </a>
+      </li>
+      
+      <li>
+          <a href="#">
+              <span class="item">Read</span>
+          </a>
+      </li>
+
+      <li>
+          <a href="#">
+              <span class="item">Update</span>
+          </a>
+      </li>
+
+      <li>
+        <a href="#">
+            <span class="item">Delete</span>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+
+    <h1><b> Create your own South Park avatar </b></h1>
+
+  <p>Simply pull the elements you have chosen, to the figure.<p>
+
+  <div id="base"> 
+    <div class="dropzone" id="cap-dropzone"> </div>
+    <div class="dropzone" id="coat-dropzone"> </div>
+    <div class="dropzone" id="pants-dropzone"> </div>
+  </div>
+
+  <button class="retrybtn" onclick="removeCustomStyle()">Retry</button>
+
+
+<main>
+  <nav class="floating-menu">
+      <ul class="main-menu">
+          <li> 
+              <a href="#head" class="ripple" onclick="myFunctionCaps()"> Head
+                <i class="fas fa-headphones fa-2x">
+                </i>
+              </a>
+          </li>
+          <li>
+              <a href="#body" class="ripple" onclick="myFunctionCoats()"> Body
+                <i class="fas fa-female fa-2x"></i>
+              </a>
+          </li>
+          <li>
+              <a href="#legs" class="ripple" onclick="myFunctionPants()"> Legs
+                <i class="fas fa-paw fa-2x"></i>
+              </a>
+          </li>
+         
+      </ul>
+      <div class="menu-bg"></div>
+     
+
+  </nav>
+  <div class="capselector" id="caps">
+    <div class="cap draggable" id="cap1"> </div> 
+    <div class="cap draggable" id="cap2"></div>
+    <div class="cap draggable" id="cap3"></div>
+    <div class="cap draggable" id="cap4"></div>
+    <div class="cap draggable" id="cap5"></div>
+
+  </div>
+
+  <div class=coatselector id="coats">
+    <div class="coat draggable" id="coat1"></div>
+    <div class="coat draggable" id="coat2"></div>
+    <div class="coat draggable" id="coat3"></div>
+    <div class="coat draggable" id="coat4"></div>
+
+
+  </div>
+
+  <div class=pantselector id="pants">
+    <div class="pants draggable" id="pants1"></div>
+    <div class="pants draggable" id="pants2"></div>
+    <div class="pants draggable" id="pants3"></div>
+    <div class="pants draggable" id="pants4"></div>
+
+  </div>
+
+  
+
+</main>
+
+<script src="src/dragndrop.js"> </script>
+
+</body>
+
+</html>
